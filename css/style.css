@@ -465,6 +465,9 @@ h3.my-profession
     color: var(--text-black-900);
     border-bottom: 1px solid var(--bg-black-50);
 }
+#email{
+    white-space: nowrap;
+}
 .about .about-content .personal-info .info-item p span
 {
     font-weight: 400;
