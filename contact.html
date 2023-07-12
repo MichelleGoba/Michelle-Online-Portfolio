@@ -25,10 +25,10 @@
       <div class="logo">
         <a href="#"><span>M</span>ichelle</a>
       </div>
-      <div class="nav-toggler">
+      <div class="nav-toggler" id="myTopnav">
         <span></span>
       </div>
-      <ul class="nav">
+      <ul class="nav" id="myTopnav">
         <li><a href="about.html"><i class="fa fa-home"></i> Home</a></li>
         <li><a href="index.html"><i class="fa fa-user"></i> About</a></li>
         <li><a href="portfolio.html"><i class="fa fa-briefcase"></i>Portfolio</a></li>
@@ -65,7 +65,7 @@
            <div class="contact-info-item padd-15">
             <div class="icon"><i class="fa fa-envelope"></i></div>
             <h4>Email</h4>
-            <p>goba.michelleolwethu@gmail.com</p>
+            <p id="email">olwethu.gb@gmail.com</p>
           </div>
           <!-- ===== Contact info item end ====== -->
            <!-- ===== Contact info item start ====== -->
@@ -123,3 +123,51 @@
   <!-- ===== Main Content End ===== -->
 </div>
 <!-- ===== Main Container End ===== -->
+  
+
+
+<script>
+  // get data from user
+  function SendEmail(){
+let name = document.getElementById("name").value;
+let email = document.getElementById("email").value;
+let message = document.getElementById("message").value;
+
+let body = "Name:" + name + "<br/> Email:" + email + "<br/> Subject:" + "<br/> Message:" + message;
+// console.log(body);
+// email
+  Email.send({
+  SecureToken : "6c60aaf6-1bcf-4dea-b4df-e8cd1e320223", 
+  // Host : "smtp.elasticemail.com",
+  // Username : "goba.michelleolwethu@gmail.com",
+  // Password : "F4B46F95899BB86A43FF58BBB54ADA539E33",
+  To : 'goba.michelleolwethu@gmail.com',
+  From : "goba.michelleolwethu@gmail.com",
+  Subject : "message from contact form",
+  Body : body
+}).then(
+message => alert("Your email has been submitted")
+);
+  }
+</script>
+
+
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  <!-- ===== JS Files ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+  <script src="js/style-switcher.js"></script>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "nav-toggler") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav-toggler";
+    }
+  }
+</script>
+
+</body>
+  
