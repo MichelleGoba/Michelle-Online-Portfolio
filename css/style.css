@@ -818,7 +818,7 @@
   {
       .contact .contact-info-item,
       .portfolio .portfolio-item,.showcase,
-      .service .service-item. 
+      .service .service-item
       {
           flex: 0 0 50%;
           max-width: 100%;
