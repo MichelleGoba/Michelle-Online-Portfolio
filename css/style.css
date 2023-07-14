@@ -497,6 +497,9 @@
   /* contact */
   .contact .row {
     display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
   }
   .contact-title
   {
@@ -518,6 +521,7 @@
       max-width: 25%;
       text-align: center;
       margin-bottom: 60px;
+     justify-content: center;
   }
   .contact .contact-info-item .icon
   {
@@ -528,6 +532,12 @@
       font-size: 25px;
       color: var(--skin-color);
   }
+  #linkedin
+  {
+      font-size: 25px;
+      color: var(--skin-color);
+  }
+
   .contact .contact-info-item h4
   {
       font-size: 18px;
@@ -543,7 +553,78 @@
       color: var(--text-black-700);
       font-weight: 400;
   }
-  .contact .contact-form
+
+  /* form */
+
+.form-container {
+
+  width: 100%;
+
+  max-width: 400px;
+
+  margin: 0 auto;
+
+  padding: 20px;
+
+  background-color: var(--bg-black-100);
+
+  border-radius: 5px;
+
+}
+
+.form-container label {
+
+  font-weight: bold;
+
+}
+
+.form-container input[type="text"],
+
+.form-container textarea {
+
+  width: 100%;
+
+  padding: 10px;
+
+  margin-bottom: 10px;
+
+  border: 1px solid var(--text-black-700);
+
+  border-radius: 4px;
+
+  box-sizing: border-box;
+
+}
+
+.form-container input[type="submit"],
+
+.form-container input[type="button"] {
+
+  background-color: var(--skin-color);
+
+  color: white;
+
+  padding: 10px 20px;
+
+  border: none;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+}
+
+
+
+.form-container input[type="submit"]:hover,
+
+.form-container input[type="button"]:hover {
+
+  background-color: var(--skin-color);
+
+}
+
+  /* .contact .contact-form
   {
       flex: 0 0 100%;
       max-width: 100%;
@@ -567,7 +648,7 @@
       width: 100%;
       height: 50px;
       border-radius: 25px;
-      background: var(--bg-black-100);
+      background: white;
       border: 1px solid var(--bg-black-50);
       padding: 10px 25px;
       font-size: 16px;
@@ -586,45 +667,23 @@
   {
       height: 50px;
       padding: 0 50px;
-  }
+  } */
+
+
+
   @media (max-width:1199px)
   {
       .section .container
       {
           padding-top: 70px;
       }
-      .aside
-      {
-          left: -270px;
-      }
-      .aside.open 
-      {
-          left: 0;
-      }
-      .aside .nav-toggler
-      {
-          display: flex;
-          left: 30px;
-      }
-      .aside .nav-toggler.open 
-      {
-          left: 300px;
-      }
-      .section
-      {
-          left: 0;
-      }
-      .section.open 
-      {
-          left: 270px;
-      }
+    
       .about .about-content .personal-info .info-item p span 
       {
           display: block;
           margin-left: 0;
       }
   }
-
 
   
   @media (max-width:991px)
@@ -646,28 +705,6 @@
           display: none;
       }
   }
-  @media (max-width:767px)
-  {
-      .contact .contact-form .col-6,
-      .contact .contact-info-item,
-      .portfolio .portfolio-item,
-      .service .service-item,
-      .about .about-content .experience,
-      .about .about-content .education,
-      .about .about-content .skills,
-      .about .about-content .personal-info
-      {
-          flex: 0 0 100%;
-          max-width: 100%;
-      }
-  }
-  
-
-
-
-
-
-
 
 
 

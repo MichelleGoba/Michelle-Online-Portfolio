@@ -258,7 +258,7 @@
         </div>
       </div>
     <div class="card">
-      
+
       <h3>Banking Application</h3>
       <div class="img">
         <a href="https://github.com/MichelleGoba/Banking-Application"><img src="images/bank app.png" alt="" width="400px" height="350px"></a>
@@ -292,78 +292,67 @@
       </div>
     </div>
     <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
-    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICE</h4>
    
     <div class="row">
       <!-- ===== Contact info item start ====== -->
       <div class="contact-info-item padd-15">
-        <div class="icon"><i class="fa fa-phone"></i></div>
-        <h4>Call Us On</h4>
-        <p>+92 3330545218</p>
+        <a href="tel:+27632963933"><div class="icon"><i class="fa fa-phone"></i></div></a>
       </div>
       <!-- ===== Contact info item end ====== -->
        <!-- ===== Contact info item start ====== -->
        <div class="contact-info-item padd-15">
-        <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-        <h4>Office</h4>
-        <p>Islamabad</p>
+        <a href="https://www.google.com/maps/place/Cape+Town/@-33.9142688,18.0956097,9z/data=!3m1!4b1!4m6!3m5!1s0x1dcc500f8826eed7:0x687fe1fc2828aa87!8m2!3d-33.9248685!4d18.4240553!16zL20vMDF5ajI?entry=ttu"><div class="icon"><i class="fa fa-map-marker-alt"></i></div></a>
+        
       </div>
       <!-- ===== Contact info item end ====== -->
+      <div class="contact-info-item padd-15">
+        <a href="https://www.linkedin.com/in/michelle-goba-12955ba2/"><i class="fa-brands fa-linkedin-in" id="linkedin"></i></a>
+ 
+     </div>
        <!-- ===== Contact info item start ====== -->
-       <div class="contact-info-item padd-15">
-        <div class="icon"><i class="fa fa-envelope"></i></div>
-        <h4>Email</h4>
-        <p>info@gmail.com</p>
+      <div class="contact-info-item padd-15">
+         <a href="https://github.com/MichelleGoba?tab=repositories"><div class="icon"><i class="fa fa-globe-europe"></i></div></a>
+         
+        
       </div>
-      <!-- ===== Contact info item end ====== -->
-       <!-- ===== Contact info item start ====== -->
-       <div class="contact-info-item padd-15">
-        <div class="icon"><i class="fa fa-globe-europe"></i></div>
-        <h4>Website</h4>
-        <p>www.domain.com</p>
-      </div>
-      <!-- ===== Contact info item end ====== -->
-    </div>
+    </div> 
+
     <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
     <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
+
     <!-- ====== Contact Form ====== -->
-    <div class="row">
-      <div class="contact-form padd-15">
-        <div class="row">
-          <div class="form-item col-6 padd-15">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Name">
-            </div>
-          </div>
-          <div class="form-item col-6 padd-15">
-            <div class="form-group">
-              <input type="email" class="form-control" placeholder="Email">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-item col-12 padd-15">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Subject">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-item col-12 padd-15">
-            <div class="form-group">
-              <textarea name="" class="form-control" id=""  placeholder="Message"></textarea>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-item col-12 padd-15">
-            <button type="submit" class="btn">Send Message</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+
+    <div class="form-container">
+
+      <form name="myForm" onsubmit="return validateForm()">
+
+      <label for="name">Name:</label>
+
+      <input type="text" id="name" name="name">
+
+          <label for="email">Email:</label>
+
+      <input type="text" id="email" name="email">
+
+          <label for="subject">Subject:</label>
+
+      <input type="text" id="subject" name="subject">
+
+          <label for="message">Message:</label>
+
+      <textarea id="message" name="message"></textarea>
+    
+      <input type="submit" value="Submit" onclick="SendEmail()">
+
+      <input type="button" value="Clear" onclick="clearForm()">
+
+      </form>
+           
+        
+
+
 <!-- ===== Contact Section End ===== -->
 </div>
 <!-- ===== Main Content End ===== -->
@@ -384,7 +373,9 @@
     menu.classList.remove('fa-times');
     header.classList.remove('active');
   }
-  
+  </script>
+
+  <script>
   /* ============================== typing animation ============================ */
   var typed = new Typed(".typing",{
       strings:["","Web Designer","Web Developer","Software Developer", "Front-end Developer"],
@@ -392,47 +383,19 @@
       BackSpeed:60,
       loop:true
   })
-
+ </script>
  
-
-  // <script src="https://smtpjs.com/v3/smtp.js"> </script>
 
   <!-- ===== JS Files ===== -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
   <script src="/Michelle-Online-Portfolio/js/script.js"></script>
   <script src="js/style-switcher.js"></script>
-  
-  <script>
-    // get data from user
-    function SendEmail(){
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let message = document.getElementById("message").value;
 
-  let body = "Name:" + name + "<br/> Email:" + email + "<br/> Subject:" + "<br/> Message:" + message;
-  // console.log(body);
-// email
-    Email.send({
-    SecureToken : "6c60aaf6-1bcf-4dea-b4df-e8cd1e320223", 
-    // Host : "smtp.elasticemail.com",
-    // Username : "goba.michelleolwethu@gmail.com",
-    // Password : "F4B46F95899BB86A43FF58BBB54ADA539E33",
-    To : 'goba.michelleolwethu@gmail.com',
-    From : "goba.michelleolwethu@gmail.com",
-    Subject : "message from contact form",
-    Body : body
-}).then(
-  message => alert(message)
-);
-    }
+
+
+  <!-- send mail script -->
+  <script src="https://smtpjs.com/v3/smtp.js">
   </script>
 
-  <script>
+<script>
 
-    btn.onclick = function() {
-      sidebar.classList.toggle('active');
-    };
-
-  </script>
-  <script src="nav.js"></script>
-</html>
