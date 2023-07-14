@@ -339,7 +339,7 @@
      
    }
    .about .row-2 .box-container .box .image2{
-     padding-left: 100px;
+     padding-left: 200px;
      
    }
   
@@ -356,6 +356,13 @@
 .row .education .title
 {
     font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    padding-top: 50px;
+}
+#skills{
+  font-size: 24px;
     margin-bottom: 30px;
     font-weight: 700;
     color: var(--text-black-900);
@@ -809,7 +816,7 @@
   @media (max-width:991px)
   {
       .contact .contact-info-item,
-      .portfolio .portfolio-item,
+      .portfolio .portfolio-item,.showcase,
       .service .service-item
       {
           flex: 0 0 50%;
@@ -836,7 +843,7 @@
     .service .service-item,
     .about .about-content .experience,
     .about .about-content .education,
-    .about .about-content .skills,
+    .about .about-content .skills,.about .row-2 .box-container .box .image2,
     .about .about-content .personal-info
     {
         flex: 0 0 100%;
