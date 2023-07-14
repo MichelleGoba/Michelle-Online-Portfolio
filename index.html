@@ -86,13 +86,13 @@
                 <p> <span>Age : </span>30</p>
                 <p> <span>City : </span>Cape Town</p>
                 <p> <span>Availability : </span>Available</p>
-                <p> <span>LinkedIn : </span>My link <a href="www.linkedin.com/in/michelle-goba-12955ba2"></a></p>
+                <p> <span>LinkedIn : <a href="https://www.linkedin.com/in/michelle-goba-12955ba2/">My Link</span></p></a>
                 
               </div>
                 <div class="box">
                   <p> <span>Phone : </span>+2763 296 3933</p>
                   <p> <span>Email : </span>goba.michelleolwethu@gmail.com</p>
-                  <p> <span>Github : </span>My link <a href="https://github.com/MichelleGoba?tab=repositories"></a></p>
+                  <p> <span>Github : <a href="https://github.com/MichelleGoba?tab=repositories"></span>My link</p></a>
                   
                 </div> 
             </div>
@@ -148,7 +148,7 @@
                   <i class="fa fa-calendar"></i> 2023 - Current
                 </h3>
                 <h4 class="timeline-title">Udemy</h4>
-                <h5>The Complete 2023 Web Development Bootcamp</h5>
+                <h5 id="title2">The Complete 2023 Web Development Bootcamp</h5>
                 <p class="timeline-text">In this course I am learning to code and become a full-stack web developer.</p>
               </div>
                    <!-- ===== timeline item ===== -->
@@ -158,7 +158,7 @@
                       <i class="fa fa-calendar"></i> 2019 - 2020
                     </h3>
                     <h4 class="timeline-title">UCT</h4>
-                    <h5>BSc Honors in GIS</h5>
+                    <h5 id="title2">BSc Honors in GIS</h5>
                     <p class="timeline-text">The degree provided me with the practical skills and academic understanding required to integrate GIS concepts into my daily job routine. Natural, geographical, and computer sciences were the center of the field.</p>
                   </div>
                        <!-- ===== timeline item ===== -->
@@ -168,7 +168,7 @@
                   <i class="fa fa-calendar"></i> 2015 - 2016
                 </h3>
                 <h4 class="timeline-title">CPUT</h4>
-                <h5>BTech in Environmental Management</h5>
+                <h5 id="title2">BTech in Environmental Management</h5>
                 <p class="timeline-text">This degree prepared me for responsible positions which require knowledge of environmental impact assessments and environmental management systems</p>
               </div>
               <div class="timeline-item">
@@ -177,7 +177,7 @@
                   <i class="fa fa-calendar"></i> 2012 - 2015
                 </h3>
                 <h4 class="timeline-title">CPUT</h4>
-                <h5>ND in Environmental Management</h5>
+                <h5 id="title2">ND in Environmental Management</h5>
                 <p class="timeline-text">This degree prepared me for responsible positions which require knowledge of environmental impact assessments and environmental management systems</p>
               </div>
             </div>
@@ -196,7 +196,7 @@
                   <i class="fa fa-calendar"></i> 2023 - Current
                 </h3>
                 <h4 class="timeline-title">UVU Africa</h4>
-                <h5>Software Development Intern</h5>
+                <h5 id="title2">Software Development Intern</h5>
                 <p class="timeline-text">I'm responsible for using HTML, CSS, and JavaScript to construct, develop, and maintain websites. I put into practice the front-end logic that controls how web applications' visual
                   components behave. I am also in charge of coding, designing, and deploying development
                   initiatives on the server and client side. I work with developers to design algorithms and
@@ -209,7 +209,7 @@
                       <i class="fa fa-calendar"></i> 2021 - 2022
                     </h3>
                     <h4 class="timeline-title">Steam House Engineering</h4>
-                    <h5>Safety Officer</h5>
+                    <h5 id="title2">Safety Officer</h5>
                     <p class="timeline-text">In this position, was in charge of assuring the company's total compliance with safety, health, and environmental laws, regulations, policies, procedures, and legislation.</p>
                   </div>
                        <!-- ===== timeline item ===== -->
@@ -219,7 +219,7 @@
                   <i class="fa fa-calendar"></i> 2018 - 2018
                 </h3>
                 <h4 class="timeline-title">CPUT</h4>
-                <h5>Teaching Assistant</h5>
+                <h5 id="title2">Teaching Assistant</h5>
                 <p class="timeline-text">Assisted 35 students with Environmental Impact Assessment assignments.
                   Supported 35 students with their map making procedures and assignments.
                   Graded assignments for 35 students and ran class help sessions.</p>
@@ -239,7 +239,7 @@
   <!-- about section end -->
   
   <!-- portfolio section start -->
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
   <h1 class="heading">Portfolio</h1>
 
   <main>
@@ -258,13 +258,11 @@
         </div>
       </div>
     <div class="card">
-
-      <h3>Banking Application</h3>
       <div class="img">
+        <h3>Banking Application</h3>
         <a href="https://github.com/MichelleGoba/Banking-Application"><img src="images/bank app.png" alt="" width="400px" height="350px"></a>
       </div>
-      <div class="card-details">
-        
+      <div class="card-details">    
       </div>
     </div>
 
@@ -273,8 +271,7 @@
       <div class="img">
         <a href="https://github.com/MichelleGoba/Maze-game"><img src="images/maze game.JPG" alt="" width="400px" height="350px"></a>
       </div>
-      <div class="card-details">
-       
+      <div class="card-details">       
       </div>
     </div>
   </main>
@@ -322,33 +319,43 @@
     <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
 
     <!-- ====== Contact Form ====== -->
+     <!-- ====== Contact Form ====== -->
+     <div class="row">
+      <div class="contact-form padd-15">
+        <div class="row">
+          <div class="form-item col-6 padd-15">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Name" id="name">
+            </div>
+          </div>
 
-
-    <div class="form-container">
-
-      <form name="myForm" onsubmit="return validateForm()">
-
-      <label for="name">Name:</label>
-
-      <input type="text" id="name" name="name">
-
-          <label for="email">Email:</label>
-
-      <input type="text" id="email" name="email">
-
-          <label for="subject">Subject:</label>
-
-      <input type="text" id="subject" name="subject">
-
-          <label for="message">Message:</label>
-
-      <textarea id="message" name="message"></textarea>
-    
-      <input type="submit" value="Submit" onclick="SendEmail()">
-
-      <input type="button" value="Clear" onclick="clearForm()">
-
-      </form>
+          <div class="form-item col-6 padd-15">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email" id="email">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-item col-12 padd-15">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Subject" id="subject">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-item col-12 padd-15">
+            <div class="form-group">
+              <textarea name="" id="message" class="form-control" id=""  placeholder="Message" id></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-item col-12 padd-15">
+            <button type="button" onclick="SendEmail()" class="btn">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
            
         
 
@@ -392,9 +399,44 @@
   <script src="js/style-switcher.js"></script>
 
 
+<!-- email -->
 
+<script>
+  // get data from user
+  function SendEmail(){
+let name = document.getElementById("name").value;
+let email = document.getElementById("email").value;
+let message = document.getElementById("message").value;
+
+let body = "Name:" + name + "<br/> Email:" + email + "<br/> Subject:" + "<br/> Message:" + message;
+// console.log(body);
+// email
+  Email.send({
+  SecureToken : "135e843f-866c-4b30-ab57-2344ebf2dc52", 
+  // Host : "smtp.elasticemail.com",
+  // Username : "goba.michelleolwethu@gmail.com",
+  // Password : "0BD95AA8C691473F11653E57BC4F056F7ECD",
+  To : 'goba.michelleolwethu@gmail.com',
+  From : "goba.michelleolwethu@gmail.com",
+  Subject : "message from contact form",
+  Body : body
+}).then(
+message => alert("Yor email has been submitted")
+);
+  }
+</script>
+
+
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
   <!-- send mail script -->
   
   <script src="https://smtpjs.com/v3/smtp.js">
   </script>
+
+ 
+
+
+
+</section>
 
