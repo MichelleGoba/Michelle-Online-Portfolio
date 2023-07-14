@@ -496,9 +496,9 @@
     opacity: 0.7;
     cursor: pointer;
   }
-  .card h3 {
+  #h4{
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
   }
   .showcase {
