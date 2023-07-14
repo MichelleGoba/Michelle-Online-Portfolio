@@ -498,8 +498,9 @@
   }
   #h4{
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
+    flex-wrap: wrap;
   }
   .showcase {
     display: flex;
@@ -796,7 +797,7 @@
       padding: 0 50px;
   } */
 
-
+/* media quiry start */
 
   @media (max-width:1199px)
   {
@@ -817,10 +818,10 @@
   {
       .contact .contact-info-item,
       .portfolio .portfolio-item,.showcase,
-      .service .service-item
+      .service .service-item. 
       {
           flex: 0 0 50%;
-          max-width: 50%;
+          max-width: 100%;
       }
       .home .home-info
       {
@@ -860,7 +861,7 @@
       width: 100%;
     }
     .card {
-      width: 80%;
+      width: 100%;
     }
 
     .img img{
@@ -887,16 +888,6 @@
         max-width: 100%;
     }
 }
-  
-  
-  
-  
-
-
-
-
-
-
   
   
   /* media queries */
